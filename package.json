@@ -1,0 +1,18 @@
+{
+    "name": "@hatsuboshi/docs",
+    "version": "1.0.0",
+    "description": "Documentation for Hatsuboshi API and the types package.",
+    "scripts": {
+        "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hatsuboshi-app/docs"
+    },
+    "author": "HuzzNZ",
+    "license": "LGPL-3.0-only",
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.3.3",
+        "tailwindcss": "^4.3.3"
+    }
+}

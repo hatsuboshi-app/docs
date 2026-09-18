@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatsuboshi API Reference</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-white text-slate-900 antialiased">
+    <header id="bar"
+            class="sticky top-0 z-10 flex items-center gap-4 border-b border-slate-200 bg-white/90 px-4 py-2 backdrop-blur">
+        <a href="/" class="text-sm font-semibold tracking-widest text-pink-600 uppercase hover:text-pink-700">
+            Hatsuboshi
+        </a>
+        <span class="text-sm text-slate-400">/</span>
+        <span id="title" class="text-sm font-medium">API reference</span>
+        <span id="env"
+              class="hidden rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">
+            dev
+        </span>
+
+        <div class="ml-auto flex items-center gap-2">
+            <label for="version" class="text-sm text-slate-600">Version</label>
+            <select id="version"
+                    class="rounded-md border border-slate-300 bg-white px-2 py-1 text-sm focus:border-pink-500 focus:ring-2 focus:ring-pink-200 focus:outline-none">
+            </select>
+        </div>
+    </header>
+
+    <div id="redoc"></div>
+
+    <script src="https://cdn.redoc.ly/redoc/v2.1.5/bundles/redoc.standalone.js"></script>
+    <script>
+        const isDev = location.pathname.includes("/api-dev")
+        if (isDev) {
+            document.title += " (dev)"
+            document.getElementById("env").classList.remove("hidden")
+        }
+
+        const select = document.getElementById("version")
+        const params = new URLSearchParams(location.search)
+
+        fetch("./versions.json")
+            .then((res) => res.json())
+            .then((versions) => {
+                const latest = versions[versions.length - 1]
+                const requested = params.get("v")
+                const current = versions.includes(requested) ? requested : latest
+
+                for (const v of [...versions].reverse()) {
+                    select.add(new Option(v === latest ? `${v} (latest)` : v, v))
+                }
+                select.value = current
+                select.addEventListener("change", () => {
+                    params.set("v", select.value)
+                    location.search = params.toString()
+                })
+
+                Redoc.init(
+                    `./${current}/swagger.json`,
+                    {
+                        scrollYOffset: "#bar",
+                        theme: {
+                            colors: {
+                                primary: { main: isDev ? "#d97706" : "#db2777" },
+                            },
+                        },
+                    },
+                    document.getElementById("redoc"),
+                )
+            })
+    </script>
+</body>
+</html>
