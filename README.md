@@ -1,2 +1,1 @@
-# docs
-Documentation for Hatsuboshi API and the types package.
+# Hatsuboshi App・Documentation
