@@ -7,9 +7,10 @@
   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
   <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">
 </div>
+
 <br>
 
-**Documentation for the Hatsuboshi API & the Hatsuboshi App Types Package.**
+**Documentation for the Hatsuboshi API & the Hatsuboshi App Types Package.** https://docs.hatsuboshi.app
 
 - The Hatsuboshi API documentation is rendered with [Redoc](https://redocly.com/) using an [OpenAPI 3.1 specification](https://www.openapis.org/).
   - Homepage ([production](https://docs.hatsuboshi.app/api/)) ([development](https://docs.hatsuboshi.app/api-dev/))
