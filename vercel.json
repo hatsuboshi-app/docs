@@ -4,6 +4,7 @@
     "buildCommand": "npm run build",
     "outputDirectory": "public",
     "cleanUrls": true,
+    "trailingSlash": true,
     "redirects": [
         { "source": "/types", "destination": "/types/latest/", "permanent": false },
         { "source": "/types/", "destination": "/types/latest/", "permanent": false }
