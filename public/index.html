@@ -3,63 +3,98 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hatsuboshi App Documentation</title>
+    <title>Development Reference - Hatsuboshi App</title>
+    <meta name="description" content="Documentation site for the Hatsuboshi App Types Package & the Hatsuboshi API.">
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
 </head>
-<body class="min-h-screen bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
-    <main class="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-20">
-        <header class="flex flex-col gap-3">
-            <p class="text-sm font-semibold tracking-widest text-pink-600 uppercase dark:text-pink-400">
-                Hatsuboshi
-            </p>
-            <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
-                Developer documentation
+<body class="min-h-screen bg-white text-slate-900 antialiased dark:bg-background-dark dark:text-primary-dark font-default">
+    <main class="mx-auto flex max-w-3xl flex-col gap-8 sm:gap-12 px-4 sm:px-6 py-8 sm:py-20">
+        <header class="flex flex-col gap-6">
+            <div class="flex flex-row text-accent gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="38" height="38">
+                    <use href="static/logo.svg#logo"/>
+                </svg>
+                <h2 class="font-campus text-2xl mb-px">
+                    Hatsuboshi App Docs
+                </h2>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-bold">
+                Development Reference
             </h1>
-            <p class="text-lg text-slate-600 dark:text-slate-400">
-                Reference docs for the Hatsuboshi types package and API.
-            </p>
+            <div class="flex flex-col gap-3">
+                <p class="sm:text-lg text-secondary-dark">
+                    Documentation site for the
+                    <a href="https://github.com/hatsuboshi-app/types" target="_blank" class="underline hover:text-types transition-colors">Hatsuboshi App Types Package</a>
+                    & the
+                    <a href="https://github.com/hatsuboshi-app/backend" target="_blank" class="underline hover:text-api transition-colors">Hatsuboshi API</a>.
+                </p>
+                <p class="sm:text-lg text-secondary-dark">
+                    Looking for <span class="font-campus">Hatsuboshi App</span>? Right this way:
+                    <a href="https://hatsuboshi.app/" class="underline hover:text-app transition-colors">https://hatsuboshi.app/</a>
+                </p>
+            </div>
         </header>
 
-        <nav class="grid gap-4 sm:grid-cols-2">
-            <a href="/types/latest/"
-               class="group flex flex-col gap-2 rounded-2xl border border-slate-200 p-6 transition hover:border-pink-400 hover:shadow-lg dark:border-slate-800 dark:hover:border-pink-500">
-                <h2 class="text-lg font-semibold group-hover:text-pink-600 dark:group-hover:text-pink-400">
-                    Types reference →
-                </h2>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
-                    Interfaces, classes and enums from the types package.
-                </p>
-            </a>
-
-            <a href="/api/"
-               class="group flex flex-col gap-2 rounded-2xl border border-slate-200 p-6 transition hover:border-pink-400 hover:shadow-lg dark:border-slate-800 dark:hover:border-pink-500">
-                <h2 class="text-lg font-semibold group-hover:text-pink-600 dark:group-hover:text-pink-400">
-                    API reference →
-                </h2>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
-                    Endpoints for the production API.
-                </p>
-            </a>
-
-            <a href="/api-dev/"
-               class="group flex flex-col gap-2 rounded-2xl border border-dashed border-slate-300 p-6 transition hover:border-amber-400 hover:shadow-lg sm:col-span-2 dark:border-slate-700 dark:hover:border-amber-500">
+        <nav class="flex flex-col gap-6">
+            <a href="/types/latest/" class="group flex flex-col py-4 px-5 sm:py-5 sm:px-6 rounded-tr-2xl rounded-bl-2xl border border-border-dark transition hover:border-types hover:shadow-lg">
                 <div class="flex items-center gap-2">
-                    <h2 class="text-lg font-semibold group-hover:text-amber-600 dark:group-hover:text-amber-400">
-                        API reference (dev) →
+                    <h2 class="text-lg font-semibold">
+                        Docs for <span class="group-hover:text-types transition-colors">Types&nbsp;Package</span>
                     </h2>
-                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
-                        unreleased
+                    <span class="rounded-full px-2 py-0.5 mb-px text-xs text-teal-800 dark:text-teal-300 bg-teal-100 dark:bg-teal-900/40 ">
+                        latest
+                    </span>
+                    <span class="sm:inline-block hidden text-lg font-semibold group-hover:translate-x-1 transition-transform ease-out">
+                        →
                     </span>
                 </div>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
-                    Endpoints on the development environment. May change without notice.
+                <p class="text-sm text-secondary-dark">
+                    Types reference for the Hatsuboshi App Types Package.
+                </p>
+            </a>
+
+            <a href="/api/" class="group flex flex-col gap-2 py-4 px-5 sm:py-5 sm:px-6 rounded-tr-2xl rounded-bl-2xl border border-border-dark transition hover:border-api hover:shadow-lg">
+                <div class="flex items-center gap-2">
+                    <h2 class="text-lg font-semibold">
+                        Docs for <span class="group-hover:text-api transition-colors">Hatsuboshi&nbsp;API</span>
+                    </h2>
+                    <span class="rounded-full px-2 py-0.5 mb-px text-xs text-teal-800 dark:text-teal-300 bg-teal-100 dark:bg-teal-900/40 ">
+                        production
+                    </span>
+                    <span class="sm:inline-block hidden text-lg font-semibold group-hover:translate-x-1 transition-transform ease-out">
+                        →
+                    </span>
+                </div>
+                <p class="text-sm text-secondary-dark">
+                    Endpoint documentation for the <span class="inline-block group-hover:text-teal-800 group-hover:dark:text-teal-300 transition">production</span> Hatsuboshi API.
+                </p>
+            </a>
+
+            <a href="/api-dev/" class="group flex flex-col py-4 px-5 sm:py-5 sm:px-6 rounded-tr-2xl rounded-bl-2xl border border-dashed border-border-dark transition hover:border-api hover:shadow-lg">
+                <div class="flex items-center gap-2">
+                    <h2 class="text-lg font-semibold">
+                        Docs for <span class="group-hover:text-api transition-colors">Hatsuboshi&nbsp;API</span>
+                    </h2>
+                    <span class="rounded-full px-2 py-0.5 mb-px text-xs text-yellow-800 dark:text-yellow-300 bg-yellow-100 dark:bg-yellow-900/40 ">
+                        development
+                    </span>
+                    <span class="sm:inline-block hidden text-lg font-semibold group-hover:translate-x-1 transition-transform ease-out">
+                        →
+                    </span>
+                </div>
+                <p class="text-sm text-secondary-dark">
+                    Endpoint documentation for the <span class="inline-block group-hover:text-yellow-800 group-hover:dark:text-yellow-300 transition">development</span> Hatsuboshi API.
                 </p>
             </a>
         </nav>
 
-        <footer class="text-sm text-slate-500">
-            <a href="https://github.com/hatsuboshi-app" class="hover:text-slate-900 dark:hover:text-slate-100">
-                hatsuboshi-app on GitHub
+        <footer class="text-sm text-secondary-dark">
+            <a href="https://github.com/hatsuboshi-app/docs" target="_blank" class="hover:text-slate-900 dark:hover:text-slate-100 transition-colors flex flex-row items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                    <use href="static/github.svg#github"/>
+                </svg>
+                <span class="mt-px font-campus">hatsuboshi-app/docs</span>
             </a>
         </footer>
     </main>

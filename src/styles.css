@@ -1,4 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;600;700&display=swap');
 @import "tailwindcss" source(none);
+
 @source "../public/index.html";
 @source "../public/api/index.html";
 @source "../public/api-dev/index.html";
+
+@font-face {
+    font-family: 'Campus';
+    src: url('static/font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    /* colors */
+    --color-background-dark: #25262b;
+    --color-background-inset-dark: #212123;
+    --color-background-layer-dark: #2f2f32;
+    --color-border-dark: rgba(75, 85, 99, 0.5);
+    --color-border-hover-dark: rgb(111 124 145 / 0.5);
+    --color-primary-dark: rgba(255, 255, 255, 0.87);
+    --color-secondary-dark: rgb(117, 121, 126);
+
+    --color-accent: #57a2ff;
+    --color-api: #ff57d8;
+    --color-types: #ff5757;
+    --color-app: #ff6510;
+
+    --font-campus: 'Campus', sans-serif;
+    --font-default: 'IBM Plex Sans JP', sans-serif;
+}
