@@ -40,7 +40,7 @@ This repository uses [GitHub Actions](https://github.com/features/actions) to au
 
 ## Contributing
 
-Feel free to [open an issue](https://github.com/hatsuboshi-app/frontend/issues/new) for any bugs, feature requests, or questions to do with this repository.
+Feel free to [open an issue](https://github.com/hatsuboshi-app/docs/issues/new) for any bugs, feature requests, or questions to do with this repository.
 
 When contributing, please use _feature branching_ when implementing new features, and submit a pull request titled using the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification, targeting the `main` branch.
 
@@ -51,4 +51,4 @@ Feel free to contact me, [@HuzzuDesu on Twitter](https://x.com/HuzzuDesu) or `@h
 ## Disclaimer
 
 > [!WARNING]
-> This app is a part of a fan-made project and **NOT** an officially endorsed app for Gakuen IDOLM@STER, nor is it associated with BNEI, QualiArts Inc., or any other official entities. All rights to assets, contents & data belong to their respective copyright owners.
+> This app is a part of a fan-made project and **NOT** an officially endorsed app for Gakuen IDOLM@STER, nor is it associated with BNEI, QualiArts Inc., or any other official entities. All rights to the original game assets, content, and intellectual property belong to their respective copyright owners.
