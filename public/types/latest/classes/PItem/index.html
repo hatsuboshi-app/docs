@@ -16,11 +16,11 @@
 produce run itself, as well as during lesson/audition gameplay sectors (e.g. &quot;あの日の約束&quot; / &quot;The promise of that
 day&quot;, &quot;ピッグドリーム貯金箱&quot; / &quot;Piggybank of Big Dreams&quot;, &quot;「Pっち」&quot; / &quot;'P-cchi'&quot;, etc.).</p>
 <div class="tsd-alert tsd-alert-tip"><div class="tsd-alert-title"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="../../assets/icons.svg#icon-alertTip"></use></svg><span>Tip</span></div><p>
-See <a href="../../interfaces/PItemFilterOptions/" class="tsd-kind-interface">PItemFilterOptions</a> for the list of <strong>filtering</strong> options.</p>
+See <a href="../../interfaces/PItemFilter/" class="tsd-kind-interface">PItemFilter</a> for the list of <strong>filtering</strong> options.</p>
 <p>See <a href="../../interfaces/IPItem/" class="tsd-kind-interface">IPItem</a> for the list of fields that can be used for <strong>sorting</strong>.</p>
 </div>
 </div></section>
-<section class="tsd-panel tsd-hierarchy" data-refl="401">
+<section class="tsd-panel tsd-hierarchy" data-refl="503">
 <h4>Hierarchy (<a href="../../hierarchy.html#PItem">View Summary</a>)</h4>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="../PersistentObject/" class="tsd-signature-type tsd-kind-class">PersistentObject</a><span class="tsd-signature-symbol">&lt;</span><a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a><span class="tsd-signature-symbol">,</span> <a href="../../interfaces/DBPItem/" class="tsd-signature-type tsd-kind-interface">DBPItem</a><span class="tsd-signature-symbol">&gt;</span>
@@ -31,7 +31,7 @@ See <a href="../../interfaces/PItemFilterOptions/" class="tsd-kind-interface">PI
 <ul class="tsd-hierarchy">
 <li><a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L27">models/persistent/PItem.ts:27</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L40">models/persistent/PItem.ts:40</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -45,6 +45,8 @@ See <a href="../../interfaces/PItemFilterOptions/" class="tsd-kind-interface">PI
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading tsd-anchor-link" id="methods">Methods<a href="#methods" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-index-list"><a href="#copy" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>copy</span></a>
+<a href="#decodelistquery" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>List<wbr/>Query</span></a>
+<a href="#encodelistquery" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>encode<wbr/>List<wbr/>Query</span></a>
 <a href="#setupgradelevel" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>set<wbr/>Upgrade<wbr/>Level</span></a>
 <a href="#todb" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>DB</span></a>
 <a href="#tojson" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>JSON</span></a>
@@ -68,6 +70,7 @@ See <a href="../../interfaces/PItemFilterOptions/" class="tsd-kind-interface">PI
 <a href="#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>name</span></a>
 <a href="#plan" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>plan</span></a>
 <a href="#rarity" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>rarity</span></a>
+<a href="#sortablefields" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>sortable<wbr/>Fields</span></a>
 <a href="#source" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>source</span></a>
 <a href="#unlocklevel" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>unlock<wbr/>Level</span></a>
 <a href="#updatedat" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>updated<wbr/>At</span></a>
@@ -105,7 +108,7 @@ will be used to construct the object.</p>
 </div></div><aside class="tsd-sources">
 <p>Overrides <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L106">models/persistent/PItem.ts:106</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L154">models/persistent/PItem.ts:154</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="fromdb"><code class="tsd-tag">Static</code><span>from<wbr/>DB</span><a href="#fromdb" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -136,7 +139,7 @@ missing fields using populate methods, at a specified training &amp; potential l
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L152">models/persistent/PItem.ts:152</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L200">models/persistent/PItem.ts:200</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -151,7 +154,33 @@ missing fields using populate methods, at a specified training &amp; potential l
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">PItem</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#copy">copy</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L197">models/persistent/PItem.ts:197</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L245">models/persistent/PItem.ts:245</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodelistquery"><code class="tsd-tag">Static</code><span>decode<wbr/>List<wbr/>Query</span><a href="#decodelistquery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodelistquery-1"><span class="tsd-kind-call-signature">decodeListQuery</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">query</span><span class="tsd-signature-symbol">:</span> <a href="../../interfaces/PItemListQuery/" class="tsd-signature-type tsd-kind-interface">PItemListQuery</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../../types/ListRequest/" class="tsd-signature-type tsd-kind-type-alias">ListRequest</a><span class="tsd-signature-symbol">&lt;</span><a href="../../interfaces/PItemFilter/" class="tsd-signature-type tsd-kind-interface">PItemFilter</a><span class="tsd-signature-symbol">,</span> <a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a><span class="tsd-signature-symbol">&gt;</span><a href="#decodelistquery-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">query</span>: <a href="../../interfaces/PItemListQuery/" class="tsd-signature-type tsd-kind-interface">PItemListQuery</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../../types/ListRequest/" class="tsd-signature-type tsd-kind-type-alias">ListRequest</a><span class="tsd-signature-symbol">&lt;</span><a href="../../interfaces/PItemFilter/" class="tsd-signature-type tsd-kind-interface">PItemFilter</a><span class="tsd-signature-symbol">,</span> <a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L95">models/persistent/PItem.ts:95</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="encodelistquery"><code class="tsd-tag">Static</code><span>encode<wbr/>List<wbr/>Query</span><a href="#encodelistquery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="encodelistquery-1"><span class="tsd-kind-call-signature">encodeListQuery</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">__namedParameters</span><span class="tsd-signature-symbol">:</span> <a href="../../types/ListRequest/" class="tsd-signature-type tsd-kind-type-alias">ListRequest</a><span class="tsd-signature-symbol">&lt;</span><a href="../../interfaces/PItemFilter/" class="tsd-signature-type tsd-kind-interface">PItemFilter</a><span class="tsd-signature-symbol">,</span> <a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../../interfaces/PItemListQuery/" class="tsd-signature-type tsd-kind-interface">PItemListQuery</a><a href="#encodelistquery-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">__namedParameters</span>: <a href="../../types/ListRequest/" class="tsd-signature-type tsd-kind-type-alias">ListRequest</a><span class="tsd-signature-symbol">&lt;</span><a href="../../interfaces/PItemFilter/" class="tsd-signature-type tsd-kind-interface">PItemFilter</a><span class="tsd-signature-symbol">,</span> <a href="../../interfaces/IPItem/" class="tsd-signature-type tsd-kind-interface">IPItem</a><span class="tsd-signature-symbol">&gt;</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../../interfaces/PItemListQuery/" class="tsd-signature-type tsd-kind-interface">PItemListQuery</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L108">models/persistent/PItem.ts:108</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setupgradelevel"><span>set<wbr/>Upgrade<wbr/>Level</span><a href="#setupgradelevel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -166,7 +195,7 @@ missing fields using populate methods, at a specified training &amp; potential l
 <li><span><span class="tsd-kind-parameter">level</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L248">models/persistent/PItem.ts:248</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L296">models/persistent/PItem.ts:296</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="todb"><span>to<wbr/>DB</span><a href="#todb" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -184,7 +213,7 @@ reconstruct an equivalent instance.</p>
 <h4 class="tsd-returns-title">Returns <a href="../../interfaces/DBPItem/" class="tsd-signature-type tsd-kind-interface">DBPItem</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#todb">toDB</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L163">models/persistent/PItem.ts:163</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L211">models/persistent/PItem.ts:211</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="tojson"><span>to<wbr/>JSON</span><a href="#tojson" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -205,7 +234,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 </div></div><aside class="tsd-sources">
 <p>Overrides <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#tojson">toJSON</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L180">models/persistent/PItem.ts:180</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L228">models/persistent/PItem.ts:228</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="topersistentdb"><code class="tsd-tag">Protected</code><span>to<wbr/>Persistent<wbr/>DB</span><a href="#topersistentdb" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -224,7 +253,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#topersistentdb">toPersistentDB</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L107">models/others/PersistentObject.ts:107</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L108">models/others/PersistentObject.ts:108</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="topersistentjson"><code class="tsd-tag">Protected</code><span>to<wbr/>Persistent<wbr/>JSON</span><a href="#topersistentjson" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -243,7 +272,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#topersistentjson">toPersistentJSON</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L87">models/others/PersistentObject.ts:87</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L88">models/others/PersistentObject.ts:88</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Accessors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="accessors-1">Accessors<a href="#accessors-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -258,7 +287,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Inherited from PersistentObject.dbRef</p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L71">models/others/PersistentObject.ts:71</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L72">models/others/PersistentObject.ts:72</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="formattedname"><span>formatted<wbr/>Name</span><a href="#formattedname" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -275,7 +304,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L207">models/persistent/PItem.ts:207</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L255">models/persistent/PItem.ts:255</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -286,7 +315,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#asseturl">assetUrl</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L36">models/persistent/PItem.ts:36</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L49">models/persistent/PItem.ts:49</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="createdat"><span>created<wbr/>At</span><a href="#createdat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">createdAt</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -304,21 +333,21 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#createdat">createdAt</a></p>
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#createdat">createdAt</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L28">models/others/PersistentObject.ts:28</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L29">models/others/PersistentObject.ts:29</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="currenteffect"><span>current<wbr/>Effect</span><a href="#currenteffect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">currentEffect</span><span class="tsd-signature-symbol">:</span> <a href="../Effect/" class="tsd-signature-type tsd-kind-class">Effect</a></div>
 <div class="tsd-comment tsd-typography"><p>The effects this P-Item instance has (including any level upgrades).</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L71">models/persistent/PItem.ts:71</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L84">models/persistent/PItem.ts:84</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="currentupgradelevel"><span>current<wbr/>Upgrade<wbr/>Level</span><a href="#currentupgradelevel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">currentUpgradeLevel</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The current upgrade level of this P-Item instance.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L76">models/persistent/PItem.ts:76</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L89">models/persistent/PItem.ts:89</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="id"><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -327,7 +356,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#id">id</a></p>
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#id">id</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L23">models/others/PersistentObject.ts:23</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L24">models/others/PersistentObject.ts:24</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="index"><code class="tsd-tag">Protected</code> <code class="tsd-tag">Static</code><span>index</span><a href="#index" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">index</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
@@ -335,7 +364,7 @@ The result can be passed back into the constructor to reconstruct an equivalent 
 </div><aside class="tsd-sources">
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#index">index</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L18">models/others/PersistentObject.ts:18</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L19">models/others/PersistentObject.ts:19</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="initialeffect"><span>initial<wbr/>Effect</span><a href="#initialeffect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">initialEffect</span><span class="tsd-signature-symbol">:</span> <a href="../Effect/" class="tsd-signature-type tsd-kind-class">Effect</a></div>
@@ -344,7 +373,7 @@ including any level upgrades.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#initialeffect">initialEffect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L66">models/persistent/PItem.ts:66</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L79">models/persistent/PItem.ts:79</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="name"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <a href="../../types/LocaleStringWithRomaji/" class="tsd-signature-type tsd-kind-type-alias">LocaleStringWithRomaji</a></div>
@@ -352,7 +381,7 @@ including any level upgrades.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#name">name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L31">models/persistent/PItem.ts:31</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L44">models/persistent/PItem.ts:44</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="plan"><span>plan</span><a href="#plan" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">plan</span><span class="tsd-signature-symbol">:</span> <a href="../../enums/Plan/" class="tsd-signature-type tsd-kind-enum">Plan</a></div>
@@ -360,7 +389,7 @@ including any level upgrades.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#plan">plan</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L41">models/persistent/PItem.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L54">models/persistent/PItem.ts:54</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="rarity"><span>rarity</span><a href="#rarity" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">rarity</span><span class="tsd-signature-symbol">:</span> <a href="../../enums/Rarity/" class="tsd-signature-type tsd-kind-enum">Rarity</a></div>
@@ -368,7 +397,12 @@ including any level upgrades.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#rarity">rarity</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L46">models/persistent/PItem.ts:46</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L59">models/persistent/PItem.ts:59</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="sortablefields"><code class="tsd-tag">Static</code> <code class="tsd-tag">Readonly</code><span>sortable<wbr/>Fields</span><a href="#sortablefields" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">sortableFields</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-keyword">readonly</span> <span class="tsd-signature-symbol">[</span><br/>    <span class="tsd-signature-type">&quot;id&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;createdAt&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;updatedAt&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;plan&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;rarity&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;unlockLevel&quot;</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-type">&quot;source&quot;</span><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L91">models/persistent/PItem.ts:91</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="source"><span>source</span><a href="#source" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">source</span><span class="tsd-signature-symbol">:</span> <a href="../../enums/PItemSource/" class="tsd-signature-type tsd-kind-enum">PItemSource</a></div>
@@ -376,7 +410,7 @@ including any level upgrades.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#source">source</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L51">models/persistent/PItem.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L64">models/persistent/PItem.ts:64</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unlocklevel"><span>unlock<wbr/>Level</span><a href="#unlocklevel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">unlockLevel</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
@@ -388,7 +422,7 @@ have an unlock level of <code>0</code>.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#unlocklevel">unlockLevel</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L56">models/persistent/PItem.ts:56</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L69">models/persistent/PItem.ts:69</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="updatedat"><span>updated<wbr/>At</span><a href="#updatedat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">updatedAt</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -406,7 +440,7 @@ have an unlock level of <code>0</code>.</p>
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#updatedat">updatedAt</a></p>
 <p>Inherited from <a href="../PersistentObject/">PersistentObject</a>.<a href="../PersistentObject/#updatedat">updatedAt</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/others/PersistentObject.ts#L33">models/others/PersistentObject.ts:33</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/others/PersistentObject.ts#L34">models/others/PersistentObject.ts:34</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="upgradelevels"><span>upgrade<wbr/>Levels</span><a href="#upgradelevels" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">upgradeLevels</span><span class="tsd-signature-symbol">:</span> <a href="../AbilityLevel/" class="tsd-signature-type tsd-kind-class">AbilityLevel</a><span class="tsd-signature-symbol">[]</span></div>
@@ -414,7 +448,7 @@ have an unlock level of <code>0</code>.</p>
 </div><aside class="tsd-sources">
 <p>Implementation of <a href="../../interfaces/IPItem/">IPItem</a>.<a href="../../interfaces/IPItem/#upgradelevels">upgradeLevels</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/67ab8a2a06d79cee2fb1eaf420c2e8ee99e605b3/src/models/persistent/PItem.ts#L61">models/persistent/PItem.ts:61</a></li></ul></aside></section></section></details></div>
+<li>Defined in <a href="https://github.com/hatsuboshi-app/types/blob/266e7b23a8129f62e89aaa75dd7b7f5fb8303ee3/src/models/persistent/PItem.ts#L74">models/persistent/PItem.ts:74</a></li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -433,11 +467,11 @@ have an unlock level of <code>0</code>.</p>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Constructing this model"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>Constructing this model</summary>
 <div><a href="#constructor"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Constructor"><use href="../../assets/icons.svg#icon-512"></use></svg><span>constructor</span></a><a href="#fromdb"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>from<wbr/>DB</span></a></div></details>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary>
-<div><a href="#copy"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>copy</span></a><a href="#setupgradelevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>set<wbr/>Upgrade<wbr/>Level</span></a><a href="#todb"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>DB</span></a><a href="#tojson"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>JSON</span></a><a href="#topersistentdb" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>Persistent<wbr/>DB</span></a><a href="#topersistentjson" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>Persistent<wbr/>JSON</span></a></div></details>
+<div><a href="#copy"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>copy</span></a><a href="#decodelistquery"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>List<wbr/>Query</span></a><a href="#encodelistquery"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>encode<wbr/>List<wbr/>Query</span></a><a href="#setupgradelevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>set<wbr/>Upgrade<wbr/>Level</span></a><a href="#todb"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>DB</span></a><a href="#tojson"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>JSON</span></a><a href="#topersistentdb" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>Persistent<wbr/>DB</span></a><a href="#topersistentjson" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../../assets/icons.svg#icon-2048"></use></svg><span>to<wbr/>Persistent<wbr/>JSON</span></a></div></details>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Accessors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>Accessors</summary>
 <div><a href="#dbref" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../../assets/icons.svg#icon-262144"></use></svg><span>db<wbr/>Ref</span></a><a href="#formattedname"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../../assets/icons.svg#icon-262144"></use></svg><span>formatted<wbr/>Name</span></a></div></details>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary>
-<div><a href="#asseturl"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>asset<wbr/>Url</span></a><a href="#createdat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>created<wbr/>At</span></a><a href="#currenteffect"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>current<wbr/>Effect</span></a><a href="#currentupgradelevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>current<wbr/>Upgrade<wbr/>Level</span></a><a href="#id" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>id</span></a><a href="#index" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>index</span></a><a href="#initialeffect"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>initial<wbr/>Effect</span></a><a href="#name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>name</span></a><a href="#plan"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>plan</span></a><a href="#rarity"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>rarity</span></a><a href="#source"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>source</span></a><a href="#unlocklevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>unlock<wbr/>Level</span></a><a href="#updatedat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>updated<wbr/>At</span></a><a href="#upgradelevels"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>upgrade<wbr/>Levels</span></a></div></details></div></details></div>
+<div><a href="#asseturl"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>asset<wbr/>Url</span></a><a href="#createdat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>created<wbr/>At</span></a><a href="#currenteffect"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>current<wbr/>Effect</span></a><a href="#currentupgradelevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>current<wbr/>Upgrade<wbr/>Level</span></a><a href="#id" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>id</span></a><a href="#index" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>index</span></a><a href="#initialeffect"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>initial<wbr/>Effect</span></a><a href="#name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>name</span></a><a href="#plan"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>plan</span></a><a href="#rarity"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>rarity</span></a><a href="#sortablefields"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>sortable<wbr/>Fields</span></a><a href="#source"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>source</span></a><a href="#unlocklevel"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>unlock<wbr/>Level</span></a><a href="#updatedat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>updated<wbr/>At</span></a><a href="#upgradelevels"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../../assets/icons.svg#icon-1024"></use></svg><span>upgrade<wbr/>Levels</span></a></div></details></div></details></div>
 <div class="site-menu">
 <nav id="tsd-sidebar-links" class="tsd-navigation"><a href="https://docs.hatsuboshi.app" class="tsd-nav-link">Hatsuboshi App Docs</a><a href="https://github.com/hatsuboshi-app/types" class="tsd-nav-link">GitHub</a></nav>
 <nav class="tsd-navigation"><a href="../../modules.html">@hatsuboshi/types</a>
